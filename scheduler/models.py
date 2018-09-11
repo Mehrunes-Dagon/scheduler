@@ -3,6 +3,6 @@ from uuid import uuid4
 
 
 class Employer(models.Model):
-    id = models.models.UUIDField(
-        primary_field=True, default=uuid4, editable=False)
-    companyName = models.charField(max_length=100)
+    id = models.UUIDField(
+        primary_key=True, default=uuid4, editable=False)
+    companyName = models.CharField(max_length=100)  # yo
